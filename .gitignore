@@ -1,0 +1,7 @@
+# PotreeConverter output can be large; use external object storage/CDN for
+# production clouds. Force-add a small demo only after reviewing its size.
+web/pointclouds/
+
+# Local Python artefacts
+__pycache__/
+*.py[cod]
