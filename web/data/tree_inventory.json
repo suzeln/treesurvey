@@ -2,7 +2,7 @@
   "title": "HKUST Campus Tree Survey",
   "session": "HKUST-S20-2026-05-06-13-16-34",
   "inventory_source": "tree_inventory_summary.csv",
-  "generated_at": "2026-07-20T16:06:15.882481+00:00",
+  "generated_at": "2026-07-20T16:30:03.588807+00:00",
   "trees": [
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:86",
@@ -16,7 +16,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 0.0
+      "cloud_instance_id": 0.0,
+      "cloud_classification_id": 1.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:87",
@@ -30,7 +31,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 2.0
+      "cloud_instance_id": 2.0,
+      "cloud_classification_id": 3.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:88",
@@ -44,7 +46,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 3.0
+      "cloud_instance_id": 3.0,
+      "cloud_classification_id": 4.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:89",
@@ -58,7 +61,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 4.0
+      "cloud_instance_id": 4.0,
+      "cloud_classification_id": 5.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:90",
@@ -72,7 +76,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 5.0
+      "cloud_instance_id": 5.0,
+      "cloud_classification_id": 6.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:91",
@@ -86,7 +91,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 6.0
+      "cloud_instance_id": 6.0,
+      "cloud_classification_id": 7.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:92",
@@ -100,7 +106,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 7.0
+      "cloud_instance_id": 7.0,
+      "cloud_classification_id": 8.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:93",
@@ -114,7 +121,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 8.0
+      "cloud_instance_id": 8.0,
+      "cloud_classification_id": 9.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:94",
@@ -128,7 +136,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 9.0
+      "cloud_instance_id": 9.0,
+      "cloud_classification_id": 10.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:95",
@@ -142,7 +151,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 10.0
+      "cloud_instance_id": 10.0,
+      "cloud_classification_id": 11.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:96",
@@ -156,7 +166,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 11.0
+      "cloud_instance_id": 11.0,
+      "cloud_classification_id": 12.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:97",
@@ -170,7 +181,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 12.0
+      "cloud_instance_id": 12.0,
+      "cloud_classification_id": 13.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:98",
@@ -184,7 +196,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 13.0
+      "cloud_instance_id": 13.0,
+      "cloud_classification_id": 14.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:99",
@@ -198,7 +211,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 14.0
+      "cloud_instance_id": 14.0,
+      "cloud_classification_id": 15.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:100",
@@ -212,7 +226,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 15.0
+      "cloud_instance_id": 15.0,
+      "cloud_classification_id": 16.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:101",
@@ -226,7 +241,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 16.0
+      "cloud_instance_id": 16.0,
+      "cloud_classification_id": 17.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:102",
@@ -240,7 +256,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 17.0
+      "cloud_instance_id": 17.0,
+      "cloud_classification_id": 18.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:103",
@@ -254,7 +271,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 18.0
+      "cloud_instance_id": 18.0,
+      "cloud_classification_id": 19.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:104",
@@ -268,7 +286,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 19.0
+      "cloud_instance_id": 19.0,
+      "cloud_classification_id": 20.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:105",
@@ -282,7 +301,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 20.0
+      "cloud_instance_id": 20.0,
+      "cloud_classification_id": 21.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:106",
@@ -296,7 +316,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 21.0
+      "cloud_instance_id": 21.0,
+      "cloud_classification_id": 22.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:107",
@@ -310,7 +331,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 22.0
+      "cloud_instance_id": 22.0,
+      "cloud_classification_id": 23.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:108",
@@ -324,7 +346,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 23.0
+      "cloud_instance_id": 23.0,
+      "cloud_classification_id": 24.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:109",
@@ -338,7 +361,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 24.0
+      "cloud_instance_id": 24.0,
+      "cloud_classification_id": 25.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:110",
@@ -352,7 +376,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 25.0
+      "cloud_instance_id": 25.0,
+      "cloud_classification_id": 26.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:111",
@@ -366,7 +391,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 26.0
+      "cloud_instance_id": 26.0,
+      "cloud_classification_id": 27.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:112",
@@ -380,7 +406,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 27.0
+      "cloud_instance_id": 27.0,
+      "cloud_classification_id": 28.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:113",
@@ -394,7 +421,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 28.0
+      "cloud_instance_id": 28.0,
+      "cloud_classification_id": 29.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:114",
@@ -408,7 +436,8 @@
       "point_count": null,
       "structural_confidence": null,
       "source_tile": "tile_x002_y003_summary.csv",
-      "cloud_instance_id": 29.0
+      "cloud_instance_id": 29.0,
+      "cloud_classification_id": 30.0
     }
   ]
 }
