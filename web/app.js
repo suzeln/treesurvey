@@ -50,6 +50,7 @@
       <dt>点数</dt><dd>${text(record.point_count)}</dd>
       <dt>结构置信度</dt><dd>${number(record.structural_confidence, 2)}</dd>
       <dt>来源瓦片</dt><dd>${escapeHtml(text(record.source_tile))}</dd>
+      <dt>点云树木编号</dt><dd>${text(record.cloud_instance_id)}</dd>
     </dl>`;
     if (state.cloud && Number.isFinite(Number(record.x)) && Number.isFinite(Number(record.y))) {
       try {
@@ -96,8 +97,10 @@
       state.viewer.setEDLEnabled(true); state.viewer.setEDLRadius(1.4); state.viewer.setEDLStrength(0.4);
       state.viewer.setPointBudget(1_500_000); state.viewer.setFOV(60); state.viewer.setBackground("gradient");
       Potree.loadPointCloud(config.pointcloudUrl, config.pointcloudName || "Point cloud", (event) => {
-        state.cloud = event.pointcloud; state.cloud.material.activeAttributeName = "rgba";
-        state.cloud.material.pointSizeType = Potree.PointSizeType.ADAPTIVE; state.cloud.material.size = 1;
+        state.cloud = event.pointcloud;
+        state.cloud.material.activeAttributeName = config.treeInstanceAttribute || "instance_id";
+        state.cloud.material.pointSizeType = Potree.PointSizeType.FIXED;
+        state.cloud.material.size = 2;
         state.viewer.scene.addPointCloud(state.cloud); state.viewer.fitToScreen(); setMessage(""); addAnnotations(); drawFallbackMap([]);
       });
     } catch (error) { console.error(error); setMessage(`Potree 初始化失败：${error.message}`); }

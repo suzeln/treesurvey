@@ -4,5 +4,6 @@ window.TREE_SURVEY_CONFIG = {
   inventoryUrl: "./data/tree_inventory.json",
   pointcloudUrl: './pointclouds/hkust_s20_tile_x002_y003/metadata.json',
   pointcloudName: 'hkust_s20_tile_x002_y003',
+  treeInstanceAttribute: "instance_id",
   coordinateSystem: "Local survey metres",
 };
