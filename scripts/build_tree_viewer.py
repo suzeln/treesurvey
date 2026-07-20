@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import shutil
 import subprocess
 from pathlib import Path
 
@@ -27,6 +28,7 @@ def main() -> None:
     parser.add_argument("--source-tile", help="match inventory records to a single converted tile")
     parser.add_argument("--pointcloud", type=Path, help="derived LAS/LAZ to convert")
     parser.add_argument("--potree-converter", default="PotreeConverter")
+    parser.add_argument("--encoding", choices=("BROTLI", "UNCOMPRESSED"), default="BROTLI")
     parser.add_argument("--cloud-id", default="hkust_tree_cloud")
     parser.add_argument("--external-metadata-url", help="public metadata.json URL when cloud is hosted outside Pages")
     parser.add_argument("--web-root", type=Path, default=Path("web"))
@@ -47,7 +49,15 @@ def main() -> None:
     elif args.pointcloud:
         output_dir = web_root / "pointclouds" / args.cloud_id
         relative_url = f"./pointclouds/{args.cloud_id}/metadata.json"
-        command = [args.potree_converter, str(args.pointcloud.resolve()), "-o", str(output_dir)]
+        converter = args.potree_converter
+        if not Path(converter).is_file():
+            converter = shutil.which(converter) or ""
+        if not converter:
+            parser.error(
+                "PotreeConverter was not found. Build/install it first, or pass "
+                "--potree-converter /absolute/path/to/PotreeConverter."
+            )
+        command = [converter, str(args.pointcloud.resolve()), "-o", str(output_dir), "--encoding", args.encoding]
         if not args.dry_run:
             output_dir.mkdir(parents=True, exist_ok=True)
             subprocess.run(command, check=True)

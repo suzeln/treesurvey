@@ -14,11 +14,12 @@ https://suzeln.github.io/treesurvey/
 
 ## 仓库内容
 
-- `web/`：GitHub Pages 静态站点，内含 167 条 HKUST 树木观测目录；
+- `web/`：GitHub Pages 静态站点，内含可直接浏览的 HKUST S20
+  `tile_x002_y003` Potree 演示点云（约 817 万点）及对应 29 条树木观测；
 - `scripts/export_tree_web_data.py`：从 PointTree 清单导出可公开的网页 JSON；
 - `scripts/build_tree_viewer.py`：调用 PotreeConverter 并配置点云入口；
 - `docs/github_pages_tree_viewer.md`：数据发布、CORS 与部署说明。
 
-原始 LAS/LAZ、ROS bag 和大规模 Potree 输出不提交到 Git。小型演示瓦片可显式
-添加；生产点云应托管在 MinIO、S3 或 CDN，并在 `web/app-config.js` 指向其
-`metadata.json`。
+原始 LAS/LAZ、ROS bag 和大规模 Potree 输出不提交到 Git。当前 32 MiB 的演示
+瓦片经过尺寸审核后显式加入；生产点云应托管在 MinIO、S3 或 CDN，并在
+`web/app-config.js` 指向其 `metadata.json`。
