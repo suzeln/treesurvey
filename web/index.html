@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="HKUST tree survey point-cloud viewer" />
+    <title>HKUST Tree Survey Viewer</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/potree/potree@1.8.2/build/potree/potree.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/potree/potree@1.8.2/libs/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/potree/potree@1.8.2/libs/spectrum/spectrum.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <p class="eyebrow">HKUST CAMPUS · TREE SURVEY</p>
+        <h1>树木点云在线查看器</h1>
+      </div>
+      <div id="connection-state" class="state">正在载入清单…</div>
+    </header>
+
+    <main>
+      <aside class="panel catalog-panel">
+        <label for="session-select">测绘批次</label>
+        <select id="session-select"></select>
+        <label for="tree-search">搜索树木</label>
+        <input id="tree-search" type="search" placeholder="ID、方法或坐标" autocomplete="off" />
+        <div class="metrics" id="metrics"></div>
+        <div class="tree-list" id="tree-list" aria-live="polite"></div>
+      </aside>
+
+      <section class="viewer-shell">
+        <div id="potree_render_area" aria-label="Potree point cloud viewer"></div>
+        <canvas id="inventory-map" aria-label="Tree inventory map"></canvas>
+        <div id="viewer-message" class="viewer-message"></div>
+        <div class="viewer-legend"><span class="dot"></span>树木观测点　点击左侧树木以定位和查看属性</div>
+      </section>
+
+      <aside class="panel inspector-panel">
+        <p class="eyebrow">TREE INSPECTOR</p>
+        <h2 id="tree-title">尚未选择树木</h2>
+        <div id="tree-details" class="details">请选择左侧清单中的一棵树。</div>
+        <div class="notice">
+          <strong>研究状态</strong>
+          <p>物种和健康结果在完成现场标注与校准之前，仅作为待审核证据，不作为诊断结论。</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      PointTree inventory + Potree viewer. 原始 LAS/LAZ 不上传至 GitHub Pages；网页加载经过 Potree 转换的派生点云。
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/potree/potree@1.8.2/libs/jquery/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/potree/potree@1.8.2/libs/spectrum/spectrum.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/potree/potree@1.8.2/build/potree/potree.js"></script>
+    <script src="./app-config.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
