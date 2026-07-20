@@ -64,6 +64,7 @@ def export_inventory(
                     "point_count": _number(row, "point_count", "instance_point_count"),
                     "structural_confidence": _number(row, "confidence_score", "structural_confidence", "dbh_confidence"),
                     "source_tile": tile,
+                    "cloud_instance_id": _number(row, "local_instance_id", "instance_id"),
                 }
             )
     payload = {

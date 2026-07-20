@@ -2,7 +2,7 @@
   "title": "HKUST Campus Tree Survey",
   "session": "HKUST-S20-2026-05-06-13-16-34",
   "inventory_source": "tree_inventory_summary.csv",
-  "generated_at": "2026-07-20T14:49:52.372091+00:00",
+  "generated_at": "2026-07-20T16:06:15.882481+00:00",
   "trees": [
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:86",
@@ -15,7 +15,8 @@
       "dbh_m": 0.1792540483552145,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 0.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:87",
@@ -28,7 +29,8 @@
       "dbh_m": 0.1837159884971978,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 2.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:88",
@@ -41,7 +43,8 @@
       "dbh_m": 0.2648756027375978,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 3.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:89",
@@ -54,7 +57,8 @@
       "dbh_m": 0.2172568504770871,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 4.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:90",
@@ -67,7 +71,8 @@
       "dbh_m": 0.1582365577780184,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 5.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:91",
@@ -80,7 +85,8 @@
       "dbh_m": 0.7742637066672763,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 6.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:92",
@@ -93,7 +99,8 @@
       "dbh_m": 0.0310137082096735,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 7.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:93",
@@ -106,7 +113,8 @@
       "dbh_m": 0.4536741647074036,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 8.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:94",
@@ -119,7 +127,8 @@
       "dbh_m": 0.1108190569549257,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 9.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:95",
@@ -132,7 +141,8 @@
       "dbh_m": 0.3044003108044685,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 10.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:96",
@@ -145,7 +155,8 @@
       "dbh_m": 0.1902910873823039,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 11.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:97",
@@ -158,7 +169,8 @@
       "dbh_m": 0.1314974704943181,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 12.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:98",
@@ -171,7 +183,8 @@
       "dbh_m": 0.1127110090235637,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 13.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:99",
@@ -184,7 +197,8 @@
       "dbh_m": 0.2335185051541164,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 14.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:100",
@@ -197,7 +211,8 @@
       "dbh_m": 0.2781894166240352,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 15.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:101",
@@ -210,7 +225,8 @@
       "dbh_m": 0.4490056721424517,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 16.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:102",
@@ -223,7 +239,8 @@
       "dbh_m": 0.3654072900466202,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 17.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:103",
@@ -236,7 +253,8 @@
       "dbh_m": 0.1014725006892547,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 18.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:104",
@@ -249,7 +267,8 @@
       "dbh_m": 0.2761791386128871,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 19.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:105",
@@ -262,7 +281,8 @@
       "dbh_m": 0.2040619254896509,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 20.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:106",
@@ -275,7 +295,8 @@
       "dbh_m": 1.0072650851985423,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 21.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:107",
@@ -288,7 +309,8 @@
       "dbh_m": 0.1112388425570424,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 22.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:108",
@@ -301,7 +323,8 @@
       "dbh_m": 0.1729864046033597,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 23.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:109",
@@ -314,7 +337,8 @@
       "dbh_m": 0.1483733706750514,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 24.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:110",
@@ -327,7 +351,8 @@
       "dbh_m": 0.2457778825830869,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 25.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:111",
@@ -340,7 +365,8 @@
       "dbh_m": 0.0830197724233672,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 26.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:112",
@@ -353,7 +379,8 @@
       "dbh_m": 0.1758523469088085,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 27.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:113",
@@ -366,7 +393,8 @@
       "dbh_m": 0.1211072984918932,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 28.0
     },
     {
       "id": "HKUST-S20-2026-05-06-13-16-34:114",
@@ -379,7 +407,8 @@
       "dbh_m": 0.1491928059149934,
       "point_count": null,
       "structural_confidence": null,
-      "source_tile": "tile_x002_y003_summary.csv"
+      "source_tile": "tile_x002_y003_summary.csv",
+      "cloud_instance_id": 29.0
     }
   ]
 }
