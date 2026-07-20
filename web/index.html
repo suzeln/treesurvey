@@ -6,9 +6,11 @@
     <meta name="description" content="HKUST tree survey point-cloud viewer" />
     <title>HKUST Tree Survey Viewer</title>
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="https://potree.github.io/potree/build/potree/potree.css" />
-    <link rel="stylesheet" href="https://potree.github.io/potree/libs/jquery-ui/jquery-ui.min.css" />
-    <link rel="stylesheet" href="https://potree.github.io/potree/libs/spectrum/spectrum.css" />
+    <link rel="stylesheet" href="./vendor/potree/potree/potree.css" />
+    <link rel="stylesheet" href="./vendor/potree/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./vendor/potree/openlayers3/ol.css" />
+    <link rel="stylesheet" href="./vendor/potree/spectrum/spectrum.css" />
+    <link rel="stylesheet" href="./vendor/potree/jstree/themes/mixed/style.css" />
   </head>
   <body>
     <header>
@@ -51,9 +53,18 @@
       PointTree inventory + Potree viewer. 原始 LAS/LAZ 不上传至 GitHub Pages；网页加载经过 Potree 转换的派生点云。
     </footer>
 
-    <script src="https://potree.github.io/potree/libs/jquery/jquery-3.1.1.min.js"></script>
-    <script src="https://potree.github.io/potree/libs/spectrum/spectrum.js"></script>
-    <script src="https://potree.github.io/potree/build/potree/potree.js"></script>
+    <script src="./vendor/potree/jquery/jquery-3.1.1.min.js"></script>
+    <script src="./vendor/potree/spectrum/spectrum.js"></script>
+    <script src="./vendor/potree/jquery-ui/jquery-ui.min.js"></script>
+    <script src="./vendor/potree/other/BinaryHeap.js"></script>
+    <script src="./vendor/potree/tween/tween.min.js"></script>
+    <script src="./vendor/potree/d3/d3.js"></script>
+    <script src="./vendor/potree/proj4/proj4.js"></script>
+    <script src="./vendor/potree/openlayers3/ol.js"></script>
+    <script src="./vendor/potree/i18next/i18next.js"></script>
+    <script src="./vendor/potree/jstree/jstree.js"></script>
+    <script src="./vendor/potree/potree/potree.js"></script>
+    <script src="./vendor/potree/plasio/js/laslaz.js"></script>
     <script src="./app-config.js"></script>
     <script src="./app.js"></script>
   </body>
