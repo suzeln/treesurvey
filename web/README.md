@@ -5,6 +5,10 @@ PointTree inventory with a multi-resolution Potree point cloud in one browser
 page: select a tree from the catalog, inspect DBH/provenance, and view its
 position in the cloud.
 
+The repository currently includes a compact, publishable `tile_x002_y003`
+demonstration cloud (about 8.2 million points) and its 29 matching inventory
+observations. Open the deployed site to inspect it directly.
+
 ## Prepare the current inventory
 
 From the repository root:

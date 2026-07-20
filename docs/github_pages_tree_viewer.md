@@ -85,7 +85,10 @@ octree 数据文件也必须位于同一可访问目录。
 
 ## 验证状态
 
-- `web/data/tree_inventory.json` 已由真实库存 CSV 导出，包含 167 条记录；
+- `web/data/tree_inventory.json` 已由真实库存 CSV 导出，并按当前三维瓦片筛选为
+  29 条匹配树木观测；
+- 当前 GitHub Pages 演示配置使用 `tile_x002_y003`：约 817 万 Potree 点，Brotli
+  输出约 32 MiB；
 - `scripts/build_tree_viewer.py --dry-run` 已生成预期 PotreeConverter 命令；
 - 本机未安装 `PotreeConverter`，所以尚未产生/发布三维 `metadata.json`；
 - GitHub Pages 发布需要仓库所有者在 GitHub 设置中启用，当前未对外推送或开启。
