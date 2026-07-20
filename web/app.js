@@ -3,6 +3,7 @@
   "use strict";
   const config = window.TREE_SURVEY_CONFIG || {};
   const state = { records: [], selected: null, viewer: null, cloud: null, annotations: [] };
+  window.TREE_SURVEY_STATE = state;
   const byId = (id) => document.getElementById(id);
   const stateNode = byId("connection-state");
   const messageNode = byId("viewer-message");
@@ -10,6 +11,26 @@
   const text = (value, fallback = "未记录") => value === null || value === undefined || value === "" ? fallback : String(value);
   const number = (value, precision = 3) => Number.isFinite(Number(value)) ? Number(value).toFixed(precision) : "未记录";
   const escapeHtml = (value) => text(value, "").replace(/[&<>'"]/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;","\"":"&quot;"}[c]));
+
+  function hslToRgb(hue, saturation = 0.78, lightness = 0.55) {
+    const chroma = (1 - Math.abs(2 * lightness - 1)) * saturation;
+    const sector = hue / 60;
+    const x = chroma * (1 - Math.abs((sector % 2) - 1));
+    const [r1, g1, b1] = sector < 1 ? [chroma, x, 0] : sector < 2 ? [x, chroma, 0] : sector < 3 ? [0, chroma, x] : sector < 4 ? [0, x, chroma] : sector < 5 ? [x, 0, chroma] : [chroma, 0, x];
+    const match = lightness - chroma / 2;
+    return [r1 + match, g1 + match, b1 + match, 1];
+  }
+
+  function configureTreeClassifications() {
+    const classifications = {
+      0: { visible: false, name: "Background", color: [0.2, 0.2, 0.2, 0] },
+      DEFAULT: { visible: true, name: "Tree", color: [0.2, 0.75, 0.55, 1] },
+    };
+    for (let classId = 1; classId <= 255; classId += 1) {
+      classifications[classId] = { visible: true, name: `Tree instance ${classId}`, color: hslToRgb((classId * 137.508) % 360) };
+    }
+    state.viewer.setClassifications(classifications);
+  }
 
   function setMessage(message) { messageNode.textContent = message || ""; }
 
@@ -94,13 +115,15 @@
     if (!window.Potree) { setMessage("Potree 脚本未载入；请检查网络访问或改为本地托管 Potree 依赖。"); return; }
     try {
       state.viewer = new Potree.Viewer(byId("potree_render_area"));
-      state.viewer.setEDLEnabled(true); state.viewer.setEDLRadius(1.4); state.viewer.setEDLStrength(0.4);
+      // EDL renders this Potree 1.8 cloud black on several WebGL drivers.
+      state.viewer.setEDLEnabled(false);
       state.viewer.setPointBudget(1_500_000); state.viewer.setFOV(60); state.viewer.setBackground("gradient");
       Potree.loadPointCloud(config.pointcloudUrl, config.pointcloudName || "Point cloud", (event) => {
         state.cloud = event.pointcloud;
         state.cloud.material.activeAttributeName = config.treeInstanceAttribute || "classification";
         state.cloud.material.pointSizeType = Potree.PointSizeType.FIXED;
-        state.cloud.material.size = 2;
+        state.cloud.material.size = 3;
+        configureTreeClassifications();
         state.viewer.scene.addPointCloud(state.cloud); state.viewer.fitToScreen(); setMessage(""); addAnnotations(); drawFallbackMap([]);
       });
     } catch (error) { console.error(error); setMessage(`Potree 初始化失败：${error.message}`); }
