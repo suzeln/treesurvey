@@ -65,6 +65,7 @@ def export_inventory(
                     "structural_confidence": _number(row, "confidence_score", "structural_confidence", "dbh_confidence"),
                     "source_tile": tile,
                     "cloud_instance_id": _number(row, "local_instance_id", "instance_id"),
+                    "cloud_classification_id": (_number(row, "local_instance_id", "instance_id") + 1) if _number(row, "local_instance_id", "instance_id") is not None else None,
                 }
             )
     payload = {
