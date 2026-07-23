@@ -2,6 +2,11 @@
 # production clouds. Force-add a small demo only after reviewing its size.
 web/pointclouds/
 
+# Frontend dependency and build artefacts
+node_modules/
+dist/
+*.tsbuildinfo
+
 # Local Python artefacts
 __pycache__/
 *.py[cod]
