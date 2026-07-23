@@ -35,8 +35,15 @@ The existing build-free Potree site remains in `web/`. New source belongs in
 ```text
 Overview
 ├── metrics
+├── real data presentation
 ├── data product cards
 └── session state
+
+Live Data
+├── embedded Potree viewport
+├── survey facts
+├── interaction guide
+└── provenance
 
 Forest Explorer
 ├── data explorer
@@ -88,17 +95,43 @@ Every visual product is registered in `src/viewers/registry.tsx`. A viewer
 receives the selected tree and matching asset. It owns its rendering engine and
 cleanup.
 
-The Potree adapter will later:
+The Potree adapter now embeds `web/embed.html`, an independently executable
+Potree page. The adapter:
 
-1. load the self-hosted Potree runtime;
-2. create and dispose the viewer;
-3. load the asset `metadata.json`;
-4. apply the safe classification palette;
-5. keep EDL disabled unless a browser capability check passes;
-6. focus the camera when the selected tree changes.
+1. loads the self-hosted Potree runtime and configured `metadata.json`;
+2. hides classification 0 and colors tree classifications independently;
+3. keeps EDL disabled because it rendered this derivative black on tested
+   WebGL drivers;
+4. supports a presentation mode with the Potree sidebar;
+5. supports a compact workspace mode without the sidebar;
+6. remains isolated from React so Potree globals and lifecycle cannot affect
+   the application shell.
 
 QSM, Graph, and 3DGS integrations can be implemented without modifying pages or
 navigation.
+
+## Real data presentation
+
+The official 3D Forest site presents live data with a large heading, a short
+explanation, and a fixed-height rounded `iframe` that loads an independent
+Potree page. The project adopts that information and interaction pattern, not
+its source code, content, or branding.
+
+The implementation has three entry points:
+
+```text
+/#/                    overview live-data section
+/#/live-data           dedicated data presentation page
+/#/explorer            research workspace point-cloud tab
+```
+
+All three reuse `LivePointCloudFrame`. The iframe resolves
+`legacy/embed.html` from Vite's `BASE_URL`, so the same production build works
+at a GitHub Pages project path and at a local preview root.
+
+The independent page reads `web/app-config.js`. Replacing a published cloud
+therefore requires updating the configuration and Potree derivative only; no
+React component must be rewritten.
 
 ## Visual state rules
 
@@ -122,8 +155,8 @@ The safe migration keeps two applications:
 
 The deployment workflow builds `frontend/`, copies `frontend/dist/` into a
 staging directory, then copies the existing `web/` directory into
-`staging/legacy/`. This prevents the new placeholder framework from removing the
-currently working point-cloud page.
+`staging/legacy/`. This preserves the full catalog viewer while the React
+application embeds the leaner `/legacy/embed.html` point-cloud viewport.
 
 Only switch GitHub Pages after:
 
@@ -135,7 +168,7 @@ Only switch GitHub Pages after:
 
 ## Next integrations
 
-1. complete `PotreeViewerAdapter` using the existing viewer lifecycle;
+1. add `postMessage` camera-focus commands between React and the iframe;
 2. replace the static provider with `/api/v1`;
 3. add QSM GLB/cylinder rendering;
 4. select a Tree Graph renderer after confirming whether graphs are 2D or 3D;

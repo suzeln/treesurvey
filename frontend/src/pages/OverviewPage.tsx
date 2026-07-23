@@ -10,6 +10,7 @@ import {
   Trees,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { LivePointCloudFrame } from "../components/LivePointCloudFrame";
 import { PlaceholderViewer } from "../components/PlaceholderViewer";
 import { StatusBadge } from "../components/StatusBadge";
 import { metrics, products, sessions } from "../data/staticData";
@@ -61,6 +62,31 @@ export function OverviewPage() {
             <small>{metric.detail}</small>
           </article>
         ))}
+      </section>
+
+      <section className="section-block real-data-section">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">REAL DATA PRESENTATION</p>
+            <h2>Explore real HKUST forest data on the web.</h2>
+            <p>
+              Stream a TreeX segmented survey tile, inspect individual tree
+              classes and navigate the point cloud directly in your browser.
+            </p>
+          </div>
+          <Link to="/live-data" className="text-link">
+            Open live data page <ArrowRight size={15} />
+          </Link>
+        </div>
+        <div className="overview-live-frame">
+          <LivePointCloudFrame mode="presentation" />
+        </div>
+        <div className="overview-live-caption">
+          <span><span className="status-dot" /> Live Potree derivative</span>
+          <span>8,176,810 points</span>
+          <span>30 tree classifications</span>
+          <code>tile_x002_y003</code>
+        </div>
       </section>
 
       <section className="section-block">

@@ -3,6 +3,7 @@ import { AppShell } from "./components/AppShell";
 import { AnalysisPage } from "./pages/AnalysisPage";
 import { DigitalTwinPage } from "./pages/DigitalTwinPage";
 import { ExplorerPage } from "./pages/ExplorerPage";
+import { LiveDataPage } from "./pages/LiveDataPage";
 import { MethodsPage } from "./pages/MethodsPage";
 import { OverviewPage } from "./pages/OverviewPage";
 import { SurveysPage } from "./pages/SurveysPage";
@@ -15,6 +16,7 @@ export default function App() {
       <Route element={<AppShell />}>
         <Route index element={<OverviewPage />} />
         <Route path="explorer" element={<ExplorerPage />} />
+        <Route path="live-data" element={<LiveDataPage />} />
         <Route path="trees" element={<TreeCatalogPage />} />
         <Route path="trees/:treeId" element={<TreeDetailPage />} />
         <Route path="surveys" element={<SurveysPage />} />

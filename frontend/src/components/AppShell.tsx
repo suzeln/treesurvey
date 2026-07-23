@@ -6,6 +6,7 @@ import {
   Database,
   GitBranch,
   LayoutDashboard,
+  Orbit,
   Radio,
   Search,
   Trees,
@@ -14,6 +15,7 @@ import { NavLink, Outlet } from "react-router-dom";
 
 const navItems = [
   { to: "/", label: "Overview", icon: LayoutDashboard, end: true },
+  { to: "/live-data", label: "Live Data", icon: Orbit },
   { to: "/explorer", label: "Forest Explorer", icon: Trees },
   { to: "/trees", label: "Tree Catalog", icon: Database },
   { to: "/surveys", label: "Survey Sessions", icon: Radio },

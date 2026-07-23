@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Embedded HKUST tree survey point-cloud viewer" />
+    <title>HKUST Point Cloud</title>
+    <link rel="stylesheet" href="./vendor/potree/potree/potree.css" />
+    <link rel="stylesheet" href="./vendor/potree/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./vendor/potree/openlayers3/ol.css" />
+    <link rel="stylesheet" href="./vendor/potree/spectrum/spectrum.css" />
+    <link rel="stylesheet" href="./vendor/potree/jstree/themes/mixed/style.css" />
+    <link rel="stylesheet" href="./embed.css" />
+  </head>
+  <body>
+    <div class="potree_container">
+      <div id="potree_render_area"></div>
+      <div id="potree_sidebar_container"></div>
+    </div>
+    <div class="embed-status" id="embed-status">
+      <span class="status-pulse"></span>
+      <span id="embed-status-text">Loading point cloud…</span>
+    </div>
+    <div class="embed-help">Left drag: orbit · Wheel: zoom · Right drag: pan</div>
+
+    <script src="./vendor/potree/jquery/jquery-3.1.1.min.js"></script>
+    <script src="./vendor/potree/spectrum/spectrum.js"></script>
+    <script src="./vendor/potree/jquery-ui/jquery-ui.min.js"></script>
+    <script src="./vendor/potree/other/BinaryHeap.js"></script>
+    <script src="./vendor/potree/tween/tween.min.js"></script>
+    <script src="./vendor/potree/d3/d3.js"></script>
+    <script src="./vendor/potree/proj4/proj4.js"></script>
+    <script src="./vendor/potree/openlayers3/ol.js"></script>
+    <script src="./vendor/potree/i18next/i18next.js"></script>
+    <script src="./vendor/potree/jstree/jstree.js"></script>
+    <script src="./vendor/potree/potree/potree.js"></script>
+    <script src="./vendor/potree/plasio/js/laslaz.js"></script>
+    <script src="./app-config.js"></script>
+    <script src="./embed.js"></script>
+  </body>
+</html>

@@ -1,12 +1,11 @@
-import { PlaceholderViewer } from "../components/PlaceholderViewer";
+import { LivePointCloudFrame } from "../components/LivePointCloudFrame";
 import type { ViewerAdapterProps } from "./ViewerAdapter";
 
 /**
  * Potree integration boundary.
  *
- * The current production viewer remains in `web/`. When the migration is
- * enabled, this adapter owns Potree lifecycle, classification styling, camera
- * focus and cleanup without leaking imperative globals into React pages.
+ * Potree remains isolated in `web/embed.html` and is embedded here so its
+ * imperative lifecycle does not leak into the React application.
  */
 export function PotreeViewerAdapter({ tree, asset }: ViewerAdapterProps) {
   return (
@@ -16,7 +15,7 @@ export function PotreeViewerAdapter({ tree, asset }: ViewerAdapterProps) {
       data-tree-id={tree?.id}
       data-asset-uri={asset?.uri}
     >
-      <PlaceholderViewer kind="point-cloud" />
+      <LivePointCloudFrame mode="workspace" loading="eager" />
     </div>
   );
 }
